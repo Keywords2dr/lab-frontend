@@ -1,0 +1,71 @@
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --bg-color: #f3f4f6;
+  --card-bg: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+
+  --status-pending: #d97706;
+  --status-pending-bg: #fffbeb;
+  --status-approved: #059669;
+  --status-approved-bg: #ecfdf5;
+  --status-returned: #2563eb;
+  --status-returned-bg: #eff6ff;
+  --status-issue: #dc2626;
+  --status-issue-bg: #fef2f2;
+}
+
+.teacher-report-container {
+  padding: 24px;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.report-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+}
+
+.btn-refresh {
+  background: white;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.btn-refresh:hover {
+  background: #f9fafb;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-refresh:active {
+  background: #f3f4f6;
+}
+
+button {
+    font-family: inherit;
+}

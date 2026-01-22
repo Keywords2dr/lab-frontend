@@ -1,0 +1,109 @@
+.profile-header-main {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 2.5rem 2rem;
+  position: relative;
+  gap: 25px;
+  z-index: 10;
+}
+
+.avatar-wrapper {
+  position: relative;
+  margin-top: -75px;
+
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+  border: 6px solid white;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  flex-shrink: 0;
+  z-index: 20;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  background: #dbeafe;
+  border-radius: 50%;
+}
+
+.btn-upload-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  
+  width: 38px;
+  height: 38px;
+  
+  background: #1e40af;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 50;
+}
+
+.btn-upload-icon:hover {
+  background: #1e3a8a;
+  transform: scale(1.1);
+}
+
+.header-info {
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.header-info h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.role-tag {
+  display: inline-flex;
+  align-items: center;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .profile-header-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -85px;
+    padding-bottom: 1.5rem;
+    gap: 15px;
+  }
+  .avatar-wrapper {
+    margin-top: 0;
+    margin-right: 0;
+  }
+}

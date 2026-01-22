@@ -1,0 +1,84 @@
+.table-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.custom-table th {
+  background: #f9fafb;
+  text-align: left;
+  padding: 16px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.custom-table td {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid transparent;
+}
+
+.status-badge.pending { background: var(--status-pending-bg); color: var(--status-pending); border-color: #fcd34d; }
+.status-badge.approved { background: var(--status-approved-bg); color: var(--status-approved); border-color: #6ee7b7; }
+.status-badge.returned { background: var(--status-returned-bg); color: var(--status-returned); border-color: #93c5fd; }
+.status-badge.issue { background: var(--status-issue-bg); color: var(--status-issue); border-color: #fca5a5; }
+
+.cell-flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.text-muted-icon { color: #9ca3af; }
+
+.btn-detail-sm {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+    font-weight: 500;
+}
+.btn-detail-sm:hover {
+    background: #f3f4f6;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}

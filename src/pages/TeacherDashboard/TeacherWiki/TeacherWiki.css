@@ -1,0 +1,278 @@
+.wiki-container {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.wiki-header {
+    margin-bottom: 25px;
+}
+.wiki-header h2 { margin: 0 0 5px 0; color: #1a73e8; font-size: 24px; }
+.wiki-header p { margin: 0; color: #666; font-size: 14px; }
+
+.wiki-controls {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #f5f7fa;
+    border: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    gap: 10px;
+}
+.search-box input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.category-tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 8px 16px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.tab-btn:hover { background: #f9f9f9; border-color: #ccc; }
+
+.tab-btn.active {
+    background: #e8f0fe;
+    color: #1a73e8;
+    border-color: #1a73e8;
+}
+
+.wiki-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.wiki-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+.wiki-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-icon-bg {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+.bg-chemical { background: #fff7ed; }
+.bg-machine { background: #eff6ff; }
+.bg-tool { background: #faf5ff; }
+
+.card-content { padding: 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+
+.card-badges { display: flex; justify-content: space-between; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+
+.badge-type { padding: 4px 8px; border-radius: 4px; }
+.type-chemical { color: #ea580c; background: rgba(234, 88, 12, 0.1); }
+.type-machine { color: #2563eb; background: rgba(37, 99, 235, 0.1); }
+.type-tool { color: #9333ea; background: rgba(147, 51, 234, 0.1); }
+
+.wiki-card h3 { margin: 5px 0; font-size: 16px; color: #333; line-height: 1.4; font-weight: 700; }
+
+.btn-detail {
+    margin-top: auto;
+    background: transparent;
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: all 0.2s;
+}
+.btn-detail:hover {
+    background: #1a73e8;
+    color: white;
+    border-color: #1a73e8;
+}
+
+.wiki-modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(4px);
+}
+
+.wiki-modal-content {
+    background: white;
+    width: 500px;
+    max-width: 90%;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    animation: scaleUp 0.3s ease-out;
+}
+
+.btn-close-modal {
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+    background: white;
+    border: none;
+    width: 36px; 
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+    transition: all 0.2s;
+    padding: 0;
+    color: #475569;
+}
+
+.btn-close-modal:hover {
+    transform: rotate(90deg);
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.modal-header-bg {
+    height: 140px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.modal-body { padding: 25px; }
+.modal-badges { margin-bottom: 10px; }
+.modal-body h2 { margin: 0 0 20px 0; color: #1e293b; font-size: 22px; font-weight: 700; }
+
+.info-row { margin-bottom: 15px; }
+.info-label {
+    display: flex; align-items: center; gap: 8px;
+    font-weight: 700; color: #64748b; font-size: 13px; margin-bottom: 6px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+}
+.info-value { font-size: 15px; color: #1e293b; line-height: 1.5; padding-left: 2px; }
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.page-num-btn {
+    min-width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #64748b;
+    transition: all 0.2s;
+    padding: 0;
+}
+
+.page-num-btn:hover:not(.dots):not(.active) {
+    border-color: #1a73e8;
+    color: #1a73e8;
+    background: #eff6ff;
+}
+
+.page-num-btn.active {
+    background: #1a73e8;
+    color: white;
+    border-color: #1a73e8;
+    box-shadow: 0 4px 6px -1px rgba(26, 115, 232, 0.3);
+}
+
+.page-num-btn.dots {
+    border: none;
+    background: transparent;
+    cursor: default;
+    color: #94a3b8;
+}
+
+.page-btn-arrow {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #64748b;
+    transition: all 0.2s;
+    padding: 0;
+}
+
+.page-btn-arrow:hover:not(:disabled) {
+    background: #f1f5f9;
+    color: #1a73e8;
+    border-color: #cbd5e1;
+}
+
+.page-btn-arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background: #f8fafc;
+}
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes scaleUp { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }

@@ -1,0 +1,95 @@
+/* src/pages/Login/Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.login-card {
+    background: #ffffff;
+    width: 360px;
+    padding: 40px 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.logo-area {
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+
+.school-name {
+    color: #b71c1c;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.portal-name {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    background-color: #e8f0fe; 
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.form-input:focus {
+    background-color: #ffffff;
+    border-color: #4285f4;
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    background-color: #3367d6;
+}
+
+.btn-gmail {
+    background-color: #3b71ca;
+    margin-top: 10px;
+}
+
+.error-msg {
+    color: #d32f2f;
+    background-color: #fdecea;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
