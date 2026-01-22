@@ -22,13 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-src/services/api.js
->>>>>>> origin/main
-=======
-
-src/services/api.js
->>>>>>> a90f4ec487a7456d1438595f75520a34fda69c41
